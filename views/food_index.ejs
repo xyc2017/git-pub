@@ -1,0 +1,16 @@
+<h1>Food Menu</h1>
+
+<a href="<%=/food/ %>"></a>
+    <ul>
+
+        <% food.forEach((eat, index)=>{ %>
+            <a href="/food/<%= index %>"><li><%=eat.name %></li></a>
+       <% }) %>
+        </ul>
+
+    <style>
+        body{
+            background-color: bisque;
+            color:blueviolet
+        }
+    </style>
