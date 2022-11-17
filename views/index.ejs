@@ -3,7 +3,7 @@
 </h1>
     <ul>
         <% drinks.forEach((drink, index)=>{ %>
-            <a href="/drinks/<%= index %>"><li><%=capitalize(drink.name) %> <%=bob() %>  <img src="<%= drink.image %>" alt="<%=drink.name %>" /></li></a>
+            <a href="/drinks/<%= index %>"><li><%=capitalize(drink.name) %> <%=bob() %> </li></a>
        <% }) %>
     </ul>
     <style>

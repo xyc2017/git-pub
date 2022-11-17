@@ -30,7 +30,7 @@ router.get('/', (req, res)=>{
     }) 
 })
 router.get('/:id', (req, res)=>{
-    res.render('../views/show.ejs', {})
+    res.render('show.ejs', {drink: drinks[req.params.id]})
 })
 
 module.exports =router
